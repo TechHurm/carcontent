@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Photo Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #151d21;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #151d21;
+            color: #ecf0f1;
+            padding: 1em;
+            text-align: center;
+            width: 100%;
+        }
+
+        main {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+
+        .photo {
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px #ff7a7a;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .photo:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Photo Gallery</h1>
+    </header>
+
+    <main>
+        <div class="photo">
+            <img src="your_photo_url_1.jpg" alt="Your Photo 1">
+        </div>
+
+        <div class="photo">
+            <img src="your_photo_url_2.jpg" alt="Your Photo 2">
+        </div>
+
+        <!-- Add more photos as needed -->
+    </main>
+
+</body>
+</html>
